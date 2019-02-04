@@ -20,6 +20,17 @@ namespace Web.Controllers
             return View();
         }
 
+         public IActionResult ShortStory()
+        {
+            return Content("This is a very short story.");
+        }
+
+          public IActionResult LongStory()
+        {
+            return Content("This is a much much much longer story.");
+        }
+        
+
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
         {
